@@ -1,5 +1,6 @@
 "use client"
 import React from 'react';
+import Link from 'next/link';
 
 // You can replace these with your actual icons, e.g., from lucide-react
 const ArrowRightIcon = () => (
@@ -10,7 +11,7 @@ const ArrowRightIcon = () => (
 
 export default function HomePage() {
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col justify-center">
+    <div className="bg-black text-white min-h-[92vh] flex flex-col justify-center">
       {/* The Navbar would be fixed above this, so we add padding to prevent overlap */}
       <main className="pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,19 +29,19 @@ export default function HomePage() {
 
             {/* Call-to-action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in">
-              <a
+              <Link
                 href="/forum"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-black bg-white rounded-lg shadow-lg hover:bg-gray-200 transition-transform transform hover:scale-105 duration-300 ease-in-out"
               >
                 Explore Forums
                 <ArrowRightIcon />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/chat"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-transparent border-2 border-gray-600 rounded-lg hover:bg-gray-800 hover:border-gray-800 transition-all duration-300 ease-in-out"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-transparent border-2 border-emerald-600 rounded-lg hover:bg-gray-800 hover:border-emerald-800 transition-all duration-300 ease-in-out"
               >
                 Join Chat
-              </a>
+              </Link>
             </div>
           </div>
         </div>
