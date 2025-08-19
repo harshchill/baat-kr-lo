@@ -1,12 +1,12 @@
 // components/Navbar.jsx
 "use client"
-import { useUser } from "@clerk/nextjs";
+// import { useUser } from "@clerk/nextjs";
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
 export default function Navbar() {
-  const user = useUser();
-  console.log(user.user?.id)
+  // const user = useUser();
+  // console.log(user.user?.id)
   return (
     <nav className="sticky top-0 bg-black px-6 py-4 flex justify-between items-center shadow-md">
       {/* Logo / Brand */}
