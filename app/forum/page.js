@@ -9,36 +9,42 @@ const topics = [
     desc: "A discussion forum for the Python programming language.",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
     link: "forum/python-forum",
+    slug:"python-room"
   },
   {
     text: "JavaScript",
     desc: "Discuss everything about client-side and server-side JavaScript.",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
     link: "forum/javascript-forum",
+    slug:"js-room"
   },
   {
     text: "React",
     desc: "Join the conversation on building user interfaces with React.",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
     link: "forum/react-forum",
+    slug:"react-room"
   },
   {
     text: "Java",
     desc: "Your go-to community for Java development and enterprise solutions.",
     img: "/java.png",
     link: "forum/java-forum",
+    slug:"java-room"
   },
   {
     text: "C++",
     desc: "Deep dive into C++ for performance-critical applications.",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png",
     link: "forum/cpp-forum",
+    slug:"c-room"
   },
   {
     text: "Node.js",
     desc: "A forum for building scalable network applications with Node.js.",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
     link: "forum/nodejs-forum",
+    slug:"node-room"
   },
 ];
 
@@ -56,7 +62,7 @@ const page = () => {
               <Image width={40} height={40} alt={topic.text} src={topic.img} />
               <h2 className="text-2xl font-semibold">{topic.text}</h2>
               <p className="text-md text-slate-200/90 ">{topic.desc}</p>
-              <Link href={topic.link}>
+              <Link href={"forum/"+topic.slug}>
               <Button className="mt-4 bg-emerald-950 text-white">Discuss</Button>
               </Link>
             </div>
