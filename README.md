@@ -2,7 +2,7 @@
 
 Baate is a modern chat and discussion platform built with Next.js (App Router). It uses Clerk for authentication and Stream (GetStream) for realtime chat and channels. Users can join public topic-based forums (Python, JavaScript, React, Java, C++, Node.js) and chat in realtime.
 
-> Note: You asked to mention that Clerk and "steam" are used. This project uses Clerk and Stream (GetStream) for chat.
+
 
 ### Features
 - Public, topic-based forums powered by Stream channels
